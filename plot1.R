@@ -7,12 +7,12 @@
 ## all sources for each of the years 1999, 2002, 2005, and 2008.
 ##
 ##
-## Use the commong code in getdata.R to read the data files and create the 
+## Use the common code in getdata.R to read the data files and create the 
 ## NEI and SCC dataframe objects
 source("getdata.R")
 
 ## We need to plot the "total PM2.5" for all years, so we need to create yearwise
-## summary of the data using 
+## summary of the data using group_by and summarize functions of dplyr library
 ## load the dplyr package
 library(dplyr)
 ## Group the data yearwise first
