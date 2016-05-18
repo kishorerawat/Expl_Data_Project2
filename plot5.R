@@ -12,7 +12,7 @@ source("getdata.R")
 ## create the subset for Baltimore city
 Data_Baltimore <- subset(NEI, fips == "24510")
 
-## From the Classification file, filter out only those which are related to "Coal"
+## Now, select those rows which are due to Motor Vehciles i.e. source type="ON-ROAD"
 Data_Vehicles <- subset(Data_Baltimore, type == "ON-ROAD")
 
 ## use aggregate function to create yearwise sum of Emissions
